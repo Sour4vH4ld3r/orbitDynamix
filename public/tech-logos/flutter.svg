@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 317">
+  <title>Flutter Logo</title>
+  <defs>
+    <linearGradient id="a" x1="3.7%" x2="75.898%" y1="25.799%" y2="52.984%">
+      <stop offset="0%" stop-color="#1A237E" stop-opacity=".4"/>
+      <stop offset="33%" stop-color="#1A237E" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path fill="#39CEFD" d="M157.666 0L0 157.667l48.8 48.8L255.268.001 157.666 0z"/>
+  <path fill="#39CEFD" d="M156.567 145.397L72.15 229.815l48.984 49.716.914-.915 85.362-85.362-50.843-47.857z"/>
+  <path fill="#03569B" d="M121.133 279.531l37.082 37.082h97.052l-85.425-85.186-48.709 48.104z"/>
+  <path fill="url(#a)" d="M71.6 230.364l48.801-48.801 49.441 48.401-49.441 49.441-48.801-49.041z"/>
+</svg> 

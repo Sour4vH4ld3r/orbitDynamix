@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer orbit -->
+  <ellipse cx="100" cy="100" rx="80" ry="50" stroke="#00E5FF" stroke-width="2" transform="rotate(30 100 100)" opacity="0.8"/>
+  
+  <!-- Inner orbit -->
+  <ellipse cx="100" cy="100" rx="60" ry="35" stroke="#7A4EAB" stroke-width="2" transform="rotate(-15 100 100)" opacity="0.8"/>
+  
+  <!-- Sphere/Planet -->
+  <circle cx="100" cy="100" r="30" fill="url(#planetGradient)"/>
+  
+  <!-- Small orbiting circle -->
+  <circle cx="160" cy="80" r="8" fill="#00E5FF"/>
+  
+  <!-- Small orbiting circle 2 -->
+  <circle cx="55" cy="125" r="6" fill="#7A4EAB"/>
+  
+  <!-- Text -->
+  <text x="100" y="170" font-family="Space Grotesk, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="white">ORBITDYNAMIX</text>
+  
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="planetGradient" x1="70" y1="70" x2="130" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E3A5F"/>
+      <stop offset="100%" stop-color="#5B3E8E"/>
+    </linearGradient>
+  </defs>
+</svg> 
