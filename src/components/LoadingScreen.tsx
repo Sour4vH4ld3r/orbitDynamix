@@ -26,9 +26,9 @@ const LoadingScreen = () => {
       </div>
 
       <div className="relative">
-        <img src="/logo.svg" alt="OrbitDynamix Logo" className="w-40 h-40 animate-float" />
-        <div className="animate-orbit absolute -top-4 -right-4 w-6 h-6 rounded-full bg-orbit-cyan opacity-70"></div>
-        <div className="animate-orbit absolute -bottom-4 -left-4 w-4 h-4 rounded-full bg-orbit-purple opacity-70" style={{ animationDelay: '0.5s', animationDuration: '15s' }}></div>
+        <img src="/logo.svg" alt="OrbitDynamix Logo" className="w-40 h-40" />
+        <div className="absolute -top-4 -right-4 w-6 h-6 rounded-full bg-orbit-cyan opacity-70"></div>
+        <div className="absolute -bottom-4 -left-4 w-4 h-4 rounded-full bg-orbit-purple opacity-70"></div>
       </div>
       
       <h1 className="mt-6 text-3xl font-bold gradient-text">OrbitDynamix</h1>

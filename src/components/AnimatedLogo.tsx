@@ -34,7 +34,7 @@ const AnimatedLogo: React.FC<AnimatedLogoProps> = ({
         xmlns="http://www.w3.org/2000/svg"
         className="absolute"
       >
-        {/* Outer orbit - animated rotation */}
+        {/* Outer orbit - static */}
         <ellipse 
           cx="100" 
           cy="100" 
@@ -44,14 +44,9 @@ const AnimatedLogo: React.FC<AnimatedLogoProps> = ({
           strokeWidth="2" 
           transform="rotate(30 100 100)" 
           opacity="0.8"
-          className="animate-spin-slow"
-          style={{ 
-            animation: `orbitRotate ${speed}ms linear infinite`,
-            transformOrigin: '100px 100px'
-          }}
         />
         
-        {/* Inner orbit - animated rotation (opposite direction) */}
+        {/* Inner orbit - static */}
         <ellipse 
           cx="100" 
           cy="100" 
@@ -61,43 +56,30 @@ const AnimatedLogo: React.FC<AnimatedLogoProps> = ({
           strokeWidth="2" 
           transform="rotate(-15 100 100)" 
           opacity="0.8"
-          style={{ 
-            animation: `orbitRotateReverse ${speed * 0.7}ms linear infinite`,
-            transformOrigin: '100px 100px'
-          }}
         />
         
-        {/* Central Sphere/Planet with pulsing effect */}
+        {/* Central Sphere/Planet - static */}
         <circle 
           cx="100" 
           cy="100" 
           r="30" 
           fill="url(#planetGradient)"
-          className="animate-pulse"
         />
         
-        {/* Orbiting circle 1 - moves along outer ellipse */}
+        {/* Orbiting circle 1 - static */}
         <circle 
           cx="160" 
           cy="80" 
           r="8" 
           fill="#00E5FF"
-          style={{ 
-            animation: `orbitDot1 ${speed}ms linear infinite`,
-            transformOrigin: '100px 100px'
-          }}
         />
         
-        {/* Orbiting circle 2 - moves along inner ellipse */}
+        {/* Orbiting circle 2 - static */}
         <circle 
           cx="55" 
           cy="125" 
           r="6" 
           fill="#7A4EAB"
-          style={{ 
-            animation: `orbitDot2 ${speed * 0.8}ms linear infinite`,
-            transformOrigin: '100px 100px'
-          }}
         />
         
         {/* Gradient definitions */}

@@ -54,29 +54,35 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-orbit-dark" ref={sectionRef}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-20 bg-gradient-to-br from-orbit-dark via-orbit-blue to-orbit-slate-dark relative overflow-hidden" ref={sectionRef}>
+      {/* Background orbital elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 left-20 w-56 h-56 rounded-full bg-orbit-purple/8 animate-pulse-slow blur-xl"></div>
+        <div className="absolute bottom-32 right-24 w-72 h-72 rounded-full bg-orbit-cyan/6 animate-pulse-slow blur-xl" style={{ animationDelay: '1s' }}></div>
+      </div>
+      
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 reveal-element opacity-0">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 reveal-element opacity-0 text-shadow tracking-tight">
               <span className="gradient-text">About OrbitDynamix</span>
             </h2>
-            <div className="w-24 h-1 bg-orbit-cyan reveal-element opacity-0"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-orbit-cyan to-orbit-purple-light reveal-element opacity-0 rounded-full"></div>
             
             <div className="mt-8 space-y-4">
-              <p className="text-gray-300 reveal-element opacity-0">
+              <p className="text-gray-200 text-lg leading-relaxed reveal-element opacity-0">
                 OrbitDynamix is a forward-thinking IT solutions agency committed to delivering exceptional digital experiences that drive business growth. Founded in 2018, we combine technical expertise with creative innovation to help businesses thrive in the digital landscape.
               </p>
-              <p className="text-gray-300 reveal-element opacity-0">
+              <p className="text-gray-200 text-lg leading-relaxed reveal-element opacity-0">
                 Our team of skilled professionals specializes in web development, mobile applications, SEO strategies, and cloud services, offering comprehensive solutions tailored to meet the unique needs of each client.
               </p>
-              <p className="text-gray-300 reveal-element opacity-0">
+              <p className="text-gray-200 text-lg leading-relaxed reveal-element opacity-0">
                 We believe in building long-term partnerships with our clients, working collaboratively to understand their goals and deliver solutions that exceed expectations.
               </p>
             </div>
             
             <div className="mt-8 reveal-element opacity-0">
-              <button className="orbit-btn">
+              <button className="orbit-btn text-base font-semibold px-8 py-3.5">
                 Learn More
               </button>
             </div>
@@ -90,15 +96,15 @@ const AboutSection = () => {
                 <div key={index} className="reveal-element opacity-0">
                   <div className={`relative flex items-start gap-4 ${index % 2 === 0 ? 'text-left' : 'flex-row-reverse text-right'}`}>
                     <div className="flex-1">
-                      <div className="bg-orbit-slate-dark p-5 rounded-lg border border-orbit-slate-light">
-                        <h3 className="text-xl font-bold text-orbit-cyan mb-2">{item.title}</h3>
-                        <p className="text-gray-400">{item.description}</p>
+                      <div className="glass-effect p-6 rounded-2xl border border-orbit-slate-light/50 card-hover">
+                        <h3 className="text-xl lg:text-2xl font-bold text-orbit-cyan-bright mb-3 text-shadow">{item.title}</h3>
+                        <p className="text-gray-300 leading-relaxed">{item.description}</p>
                       </div>
                     </div>
                     
                     <div className="flex flex-col items-center">
-                      <div className="w-4 h-4 rounded-full bg-orbit-cyan z-10"></div>
-                      <div className="text-orbit-cyan font-bold mt-2">{item.year}</div>
+                      <div className="w-4 h-4 rounded-full bg-orbit-cyan-bright z-10 shadow-lg shadow-orbit-cyan/50"></div>
+                      <div className="text-orbit-cyan-bright font-bold mt-2 text-shadow">{item.year}</div>
                     </div>
                     
                     <div className="flex-1"></div>

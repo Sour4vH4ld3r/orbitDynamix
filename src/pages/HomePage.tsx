@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
+import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import TechnologiesSection from "@/components/TechnologiesSection";
 import AboutSection from "@/components/AboutSection";
@@ -29,6 +30,7 @@ const HomePage = () => {
       <div>
         <HeroSection />
         <ServicesSection />
+        <WhyChooseUsSection />
         <TechnologiesSection />
         <AboutSection />
         <PortfolioSection />
